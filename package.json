@@ -1,0 +1,21 @@
+{
+  "name": "Build_an_Interactive_Website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --files 'index.html, ./**/*.html, main.css, ./*.js' --server './'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeschool/FrontEndNewsScreencast.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codeschool/FrontEndNewsScreencast/issues"
+  },
+  "homepage": "https://github.com/codeschool/FrontEndNewsScreencast#readme"
+}
