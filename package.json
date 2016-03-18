@@ -17,5 +17,15 @@
   "bugs": {
     "url": "https://github.com/codeschool/FrontEndNewsScreencast/issues"
   },
-  "homepage": "https://github.com/codeschool/FrontEndNewsScreencast#readme"
+  "homepage": "https://github.com/codeschool/FrontEndNewsScreencast#readme",
+  "devDependencies": {
+    "jspm": "^0.16.31"
+  },
+  "jspm": {
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
 }
