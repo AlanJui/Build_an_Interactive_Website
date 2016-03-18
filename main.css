@@ -19,7 +19,9 @@
  -----------------------------------------------*/
 
 body {
-  color: black;
+  color: #212121;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -36,11 +38,13 @@ p {
 }
 
 a {
+  color: #ff4081;
 }
 
 a:active,
 a:hover,
 a:focus {
+  color: #212121;
 }
 
 /*-----------------------------------------------
@@ -81,9 +85,14 @@ a:focus {
 
 .news-link {
   color: #3f51b5;
+  display: block;
   font-size: 24px; 
+  margin-bottom: 10px;
 }
+
 .news-meta-item {
+  display: inline;
+  margin-right: 15px;
 }
 
 /*-----------------------------------------------
