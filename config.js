@@ -12,6 +12,14 @@ System.config({
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
   },
+  bundles: {
+    "build.js": [
+      "app.js",
+      "lib/bootstrap.js",
+      "npm:jquery@2.2.2.js",
+      "npm:jquery@2.2.2/dist/jquery.js"
+    ]
+  },
 
   map: {
     "babel": "npm:babel-core@5.8.35",
