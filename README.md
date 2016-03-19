@@ -13,7 +13,7 @@
  * npm
  * npm 模組 - http-server (以「Global」模式安裝)
  
-## 開發階段
+## 開發作業
 
  1. 自 GitHub 下載及安裝作業
  
@@ -40,7 +40,7 @@
     
     使用瀏覽器器，以 URL： http://localhost:3000/ 觀看網頁輸出。
     
-## 發行階段
+## 發行作業
 
  1. 將 JavaScript 檔案打包
  
@@ -66,7 +66,7 @@
  
     變更 `./dist/index.html` 檔案的內容，使其 JavaScript 僅只載入 `build.js` 檔案。
  
-    原 index.html 以下的內容，標示成註解（亦可將之刪除）：
+    (1) 原 index.html 以下的內容，標示成註解（亦可將之刪除）：
     
     ```
     <!-- Development -->
@@ -78,7 +78,7 @@
     <!-- Development End -->
     ```
     
-    將： `<!--<script src="build.js"></script>-->` 這行的註解去除。
+    (2) 如下所示之內容，將： `<!--<script src="build.js"></script>-->` 這行的註解去除。
 
     ```    
     <!-- Production -->
@@ -90,11 +90,11 @@
     
     ```
     <!-- Development -->
-    <!--<script src="jspm_packages/system.js"></script>
-    <script src="config.js"></script>
-    <script>
-      System.import('app.js');
-    </script>-->
+    <!--<script src="jspm_packages/system.js"></script>-->
+    <!--<script src="config.js"></script>-->
+    <!--<script>-->
+    <!--  System.import('app.js');-->
+    <!--</script>-->
     <!-- Development End -->
     
     <!-- Production -->
@@ -104,9 +104,11 @@
     
  4. 試行及驗證結果
  
-    為「發行作業」而進行的「打包」工作完成後，在 `dist` 目錄中，須有如下檔案：
+    「發行作業」中的第 1 至 第 3 步驟，屬「打包作業」。
     
-     * index.html (<script src="build.js"></script>)
+    當「打包作業」完成後，在 `dist` 目錄中，應有如下檔案：
+    
+     * index.html (只載入：build.js)
      * build.js
      * normalize.css
      * main.css 
