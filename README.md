@@ -1,4 +1,4 @@
-# 摘要說明
+# 專案摘要說明
 
 本專案以 `Code School` 的 Screencasts 教程 [《Build an Interactive Website》](https://www.codeschool.com/screencasts/build-an-interactive-website-part-1) 為基底，進行實作。
 
@@ -24,7 +24,7 @@
     
     $ npm install
     
-    $ jspm
+    $ jspm install
     
     ```
      
@@ -52,9 +52,9 @@
     $ npm run dist
     ```    
     
-    `【註】`： 若是執行 **npm run dist-min** 指令，則輸出的 build.js 檔案，會對其 JavaScript 進行壓縮（minify）。
+    **【註】**： 若是執行 **npm run dist-min** 指令，則輸出的 build.js 檔案，會對其 JavaScript 進行壓縮（minify）。
     
- 2. 包裝網頁檔案及樣式檔案
+ 2. 包裝首頁檔案及樣式檔案
  
     將專案的 index.hml, normalize.css, main.css 檔案，複製到 `./dist` 目錄之中。
  
@@ -62,7 +62,7 @@
     $ cp index.html *.css dist/    
     ```    
     
- 3. 修訂首頁 JavaScript 的載入
+ 3. 變更首頁須載入的 JavaScript 檔案
  
     變更 `./dist/index.html` 檔案的內容，使其 JavaScript 僅只載入 `build.js` 檔案。
  
@@ -78,7 +78,7 @@
     <!-- Development End -->
     ```
     
-    將如下所示，其中的： `<!--<script src="build.js"></script>-->` 註解除。
+    將： `<!--<script src="build.js"></script>-->` 這行的註解去除。
 
     ```    
     <!-- Production -->
@@ -86,7 +86,7 @@
     <!-- Production End -->    
     ```
     
-    修訂的結果為：
+    變更最終的結果：
     
     ```
     <!-- Development -->
@@ -123,6 +123,8 @@
  
        
     
-## Code School 原始程式範例
+## 參考資訊
+
+### Code School 原始程式範例
 
 https://github.com/codeschool/FrontEndNewsScreencast    
