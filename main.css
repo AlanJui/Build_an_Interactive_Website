@@ -25,6 +25,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 5px;
+  margin-top: 0;
 }
 
 ol, ul {
@@ -61,8 +63,8 @@ a:focus {
 }
 
 /*-----------------------------------------------
-*   Logo
------------------------------------------------*/
+ *   Logo
+ -----------------------------------------------*/
 
 .logo {
   font-size: 34px;
@@ -72,8 +74,8 @@ a:focus {
 }
 
 /*-----------------------------------------------
-*   News
------------------------------------------------*/
+ *   News
+ -----------------------------------------------*/
 
 .news-item {
   border-bottom: 1px solid #b6b6b6;
@@ -82,6 +84,9 @@ a:focus {
 }
 
 .news-item:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .news-link {
@@ -97,17 +102,16 @@ a:focus {
 }
 
 /*-----------------------------------------------
-*   Content
------------------------------------------------*/
+ *   Content
+ -----------------------------------------------*/
 
-/*.content {
-  margin: 0 auto;
-  max-width: 800px;
-}*/
+.content {
+  margin-bottom: 40px;
+}
 
 /*-----------------------------------------------
-*   Container
------------------------------------------------*/
+ *   Container
+ -----------------------------------------------*/
 
 .container {
   margin: 0 auto;
@@ -149,28 +153,64 @@ a:focus {
 }
 
 /*-----------------------------------------------
-*   Modal
------------------------------------------------*/
+ *   Modal
+ -----------------------------------------------*/
 
 .modal {
+  background-color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
+  left: 50%;
+  opacity: 0;
+  position: absolute;
+  top: 40px;
+  transform: translate(-50%, -5%);
+  transition: 0.4s ease-in-out;
+  visibility: hidden;
+  width: 500px;
+  z-index: 2;
 }
 
 .modal.is-visible {
+  opacity: 1;
+  transform: translate(-50%, 10%);
+  visibility: visible;
 }
 
 .modal-media {
+  position: relative;
 }
 
 .modal-media-title {
+  bottom: 20px;
+  color: #fff;
+  font-size: 30px;
+  left: 20px;
+  position: absolute;
 }
 
 .modal-content {
+  padding: 20px;
 }
 
 .modal-overlay {
+  bottom: 0;
+  background-color: #212121;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  transition: 0.4s ease-in-out;
+  visibility: hidden;
+  width: 100%;
+  z-index: 1;
 }
 
 .modal-overlay.is-visible {
+  opacity: 0.45;
+  visibility: visible;
 }
 
 /*-----------------------------------------------

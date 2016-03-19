@@ -29,6 +29,27 @@
           <input class="form-input" type="text" id="form-link-input" />
         </form>
       </header>
+      
+      <div class='modal js-modal'>
+          <div class='modal-media'>
+            <img src='https://s.gravatar.com/avatar/2f9c4025a3e6d10bf091b6279fb28130?s=500&r=g' alt='' />
+            <h3 class='modal-media-title'>Dan Denney</h3>
+          </div>
+          <div class='modal-content'>
+            <h3>About Me</h3>
+            <p>I'm a seriously good copy and paster. Front-end dev for @codeschool, lover of all things web design/dev related and founder of @frontendconf.</p>
+
+            <ol class='news'>
+              <li class='news-item'>
+                <a class='news-link' href='#'>Frontend Design</a>
+              </li>
+              <li class='news-item'>
+                <a class='news-link' href='#'>JavaScript Modules: A Beginner's Guide</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class='modal-overlay js-modal-overlay'></div>
 
         <ol class='news'>
           <li class='news-item'>
@@ -36,7 +57,7 @@
             <ul class='news-meta'>
               <li class='news-meta-item'>
                 <em>Posted by:</em>
-                <a href='#'>Dan Denney</a>
+                <a class="js-show-modal" href='#'>Dan Denney</a>
               </li>
               <li class='news-meta-item'>
                 <a href='#'>2 comments</a>
