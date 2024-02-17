@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <title>
+        漢字横排，注音：方音在漢字右側，及下方擺白話字拚音
+    </title>
+    <meta charset="UTF-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap');
+        @font-face {
+            font-family: 'Noto Sans TC';
+            font-style: normal;
+            font-weight: 100;
+            src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.woff2) format('woff2'),
+                 url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.woff) format('woff'),
+                 url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.otf) format('opentype');
+        }
+        /*****
+        @font-face {
+            font-family: BopomofoRuby;
+            src: local('./assets/fonts/BopomofoRuby1909-v1-Regular'),
+                url(/assets/fonts/BopomofoRuby1909-v1-Regular.ttf);
+        }
+        *****/
+        @font-face { 
+            font-family: BopomofoRuby;
+            src: local("BopomofoRuby1909-v1 Regular"),
+                 url(/assets/fonts/BopomofoRuby1909-v1-Regular.ttf);
+        }
+
+        body, input, button, select, textarea {
+            font-family: "Noto Sans TC", "微軟正黑體", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            line-height: 1.8;
+            letter-spacing: 2px;
+            margin: 10px 50px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        h2 {
+            font-family: sans-serif;
+        }
+
+        .zhu_yin {
+            font-size: 48px;
+        }
+
+        rt {
+            font-family: BobomofoRuby;
+            font-size: 45%;
+            ruby-merge: separate;
+            writing-mode: horizontal-tb;
+            color: darkcyan;
+        }
+
+        rtc {
+            font-family: "BopomofoRuby";
+            font-size: 30%;
+            color: cornflowerblue;
+            display: inline-block;
+            ruby-position: inter-character;
+            ruby-align: center;
+            ruby-merge: separate;
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            vertical-align: middle;
+        }
+
+        ruby {
+            <!-- ruby-position: under; -->
+            <!-- ruby-align: center; -->
+            <!-- ruby-merge: auto; -->
+        }
+    </style>
+</head>
+
+<body>
+    <h2>
+        漢字横排，注音：方音在漢字右側，及下方擺白話字拚音
+    </h2>
+
+    <div class='zhu_yin'>
+        <p>
+        《
+        <ruby>臨<rtc>ㄌㄧㆬˊ</rtc></ruby>
+        <ruby>江<rtc>ㄍㄤ</rtc></ruby>
+        <ruby>仙<rtc>ㄒㄧㄢ</rtc></ruby>
+        》
+        </p><p>
+        <ruby>滾<rtc>ㄍㄨㄣˋ</rtc></ruby>
+        <ruby>滾<rtc>ㄍㄨㄣˋ</rtc></ruby>
+        <ruby>長<rtc>ㄉㄧㆲˊ</rtc></ruby>
+        <ruby>江<rtc>ㄍㄤ</rtc></ruby>
+        <ruby>東<rtc>ㄉㆲ</rtc></ruby>
+        <ruby>逝<rtc>ㄙㆤ˫</rtc></ruby>
+        <ruby>水<rtc>ㄙㄨㄧˋ</rtc></ruby>
+        ，
+        <ruby>浪<rtc>ㄌㆲ˫</rtc></ruby>
+        <ruby>花<rtc>ㄏㄨㄚ</rtc></ruby>
+        <ruby>淘<rtc>ㄉㄜˊ</rtc></ruby>
+        <ruby>盡<rtc>ㄐㄧㄣ˪</rtc></ruby>
+        <ruby>英<rtc>ㄧㄥ</rtc></ruby>
+        <ruby>雄<rtc>ㄏㄧㆲˊ</rtc></ruby>
+        。
+        </p><p>
+        <ruby>是<rtc>ㄒㄧ˫</rtc></ruby>
+        <ruby>非<rtc>ㄏㄨㄧ</rtc></ruby>
+        <ruby>成<rtc>ㄒㄧㄥˊ</rtc></ruby>
+        <ruby>敗<rtc>ㄅㄞ˫</rtc></ruby>
+        <ruby>轉<rtc>ㄗㄨㄢˋ</rtc></ruby>
+        <ruby>頭<rtc>ㄊㄧㄜˊ</rtc></ruby>
+        <ruby>空<rtc>ㄎㆲ</rtc></ruby>
+        。
+        </p><p>
+        <ruby>青<rtc>ㄑㄧㄥ</rtc></ruby>
+        <ruby>山<rtc>ㄙㄢ</rtc></ruby>
+        <ruby>依<rtc>ㄧ</rtc></ruby>
+        <ruby>舊<rtc>ㄍㄧㄨ˫</rtc></ruby>
+        <ruby>在<rtc>ㄗㄞ˫</rtc></ruby>
+        ，
+        <ruby>幾<rtc>ㄍㄧˋ</rtc></ruby>
+        <ruby>度<rtc>ㄉㆦ˫</rtc></ruby>
+        <ruby>夕<rtc>ㄙㄧㆻ˙</rtc></ruby>
+        <ruby>陽<rtc>ㄧㆲˊ</rtc></ruby>
+        <ruby>紅<rtc>ㄏㆲˊ</rtc></ruby>
+        。
+        </p><p>
+        <ruby>白<rtc>ㄅㄧㆻ</rtc></ruby>
+        <ruby>髮<rtc>ㄏㄨㄚㆵ</rtc></ruby>
+        <ruby>漁<rtc>ㆣㄨˊ</rtc></ruby>
+        <ruby>樵<rtc>ㄐㄧㄠˊ</rtc></ruby>
+        <ruby>江<rtc>ㄍㄤ</rtc></ruby>
+        <ruby>渚<rtc>ㄗㄨˋ</rtc></ruby>
+        <ruby>上<rtc>ㄒㄧㆲ˫</rtc></ruby>
+        ，
+        <ruby>慣<rtc>ㄍㄨㄢ˪</rtc></ruby>
+        <ruby>看<rtc>ㄎㄢ˪</rtc></ruby>
+        <ruby>秋<rtc>ㄑㄧㄨ</rtc></ruby>
+        <ruby>月<rtc>ㆣㄨㄚㆵ˙</rtc></ruby>
+        <ruby>春<rtc>ㄘㄨㄣ</rtc></ruby>
+        <ruby>風<rtc>ㄏㆲ</rtc></ruby>
+        。
+        </p><p>
+        <ruby>一<rtc>ㄧㆵ</rtc></ruby>
+        <ruby>壺<rtc>ㄏㆦˊ</rtc></ruby>
+        <ruby>濁<rtc>ㄉㆦㆻ˙</rtc></ruby>
+        <ruby>酒<rtc>ㄐㄧㄨˋ</rtc></ruby>
+        <ruby>喜<rtc>ㄏㄧˋ</rtc></ruby>
+        <ruby>相<rtc>ㄒㄧㆲ˪</rtc></ruby>
+        <ruby>逢<rtc>ㄏㆲˊ</rtc></ruby>
+        。
+        </p><p>
+        <ruby>古<rtc>ㄍㆦˋ</rtc></ruby>
+        <ruby>今<rtc>ㄍㄧㆬ</rtc></ruby>
+        <ruby>多<rtc>ㄉㄜ</rtc></ruby>
+        <ruby>少<rtc>ㄒㄧㄠˋ</rtc></ruby>
+        <ruby>事<rtc>ㄙㄨ˫</rtc></ruby>
+        ，
+        <ruby>都<rtc>ㄉㆦ</rtc></ruby>
+        <ruby>付<rtc>ㄏㄨ˪</rtc></ruby>
+        <ruby>笑<rtc>ㄑㄧㄠˋ</rtc></ruby>
+        <ruby>談<rtc>ㄉㆰˊ</rtc></ruby>
+        <ruby>中<rtc>ㄉㄧㆲ</rtc></ruby>
+        。
+        </p><p>
+        </p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+    <head>
+        <title>
+            漢字横排，注音在右側直擺
+        </title>
+        <meta charset="UTF-8">
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap');
+            body, input, button, select, textarea {
+                font-family: "標楷體", 'Noto Sans TC', "微軟正黑體", "Helvetica Neue", Helvetica, Arial, "微软雅黑", sans-serif;
+                line-height: 1.8;
+                letter-spacing: 2px;
+            }
+            a {
+                text-decoration: none;
+            }
+            h2 {
+                font-family: sans-serif;
+            }
+            @font-face {
+                font-family: BopomofoRuby;
+                src: local('./assets/fonts/BopomofoRuby1909-v1-Regular'),
+                url(/assets/fonts/BopomofoRuby1909-v1-Regular.ttf);
+            }
+            /***************************
+                ruby-position:after;
+            ****************************/
+            .zhu_yin {
+                font-size: 48px;
+                line-height: 64px;
+            }
+            rt:lang(zh-TW) {
+                color: red;
+                font-family: BopomofoRuby;
+                font-size: 26%;
+                text-align: center;
+                padding-right: 0.5rem;
+                display: inline-block;
+                ruby-position: inter-character;
+                writing-mode: vertical-rl;
+                text-orientation: upright;
+                vertical-align: middle;
+                letter-spacing: 0px;
+            }
+            ruby {
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2>Ruby Tag 研習</h2>
+
+        <div class="zhu_yin">
+
+            <p>
+            <ruby>
+                《
+                <rb>楚</rb><rt>ㄘㆦˋ</rt>
+                <rb>辭</rb><rt>ㄙㄨˊ</rt>
+                ・
+                <rb>漁</rb><rt>ㆣㄨˊ</rt>
+                <rb>父</rb><rt>ㄏㄨ˫</rt>
+                》
+            </ruby>
+            </p>
+            <p>
+            <ruby>
+                <rb>屈<rt>ㄎㄨㆵ
+                <rb>原<rt>ㆣㄨㄢˊ
+                <rb>既<rt>ㄍㄧ˪
+                <rb>放<rt>ㄏㆲ˪
+                ，
+                <rb>遊<rt>ㄧㄨˊ
+                <rb>於<rt>ㄧˊ
+                <rb>江<rt>ㄍㄤ
+                <rb>潭<rt>ㄊㆰˊ
+                ，
+                <rb>行<rt>ㄏㄧㄥ˫
+                <rb>吟<rt>ㆣㄧㆬˊ
+                <rb>澤<rt>ㄉㄧㆻ˙
+                <rb>畔<rt>ㄅㄨㄢ˫
+                ，
+                <rb>顏<rt>ㆣㄢˊ
+                <rb>色<rt>ㄙㄧㆻ˙
+                <rb>憔<rt>ㄗㄧㄠˊ
+                <rb>悴<rt>ㄘㄧ˫
+                ，
+                <rb>形<rt>ㄏㄧㄥˊ
+                <rb>容<rt>ㄧㆲˊ
+                <rb>枯<rt>ㄍㆦ
+                <rb>槁<rt>ㄍㄜˋ
+                。
+            </ruby>
+            </p>
+            <p>
+            <ruby>
+                <rb>漁<rt>ㆣㄨˊ</rt></rb>
+                    <rb>父<rt>ㄏㄨ˫</rt></rb>
+                        <rb>見<rt>ㄍㄧㄢ˪</rt></rb></ruby>
+                            <rb>而<rt>ㆡㄧˊ</rt></rb>
+                                <rb>問<rt>ㄇㆭ˫</rt></rb>
+                                    <rb>之<rt>ㄗㄧ</rt></rb>
+                                        <rb>曰<rt>ㄨㄚㆵ˙</rt></rb>
+                                            ：
+                                                <rb>子<rt>ㄗㄧˋ</rt></rb>
+                                                    <rb>非<rt>ㄏㄨㄧ</rt></rb>
+                                                        <rb>三<rt>ㄙㆩ</rt></rb>
+                                                            <rb>閭<rt>ㄌㄧˊ</rt></rb>
+                                                                <rb>大<rt>ㄉㄨㄚ˫</rt></rb>
+                                                                    <rb>夫<rt>ㄏㄨ</rt></rb>
+                                                                        <rb>與<rt>ㄨˋ</rt></rb>
+                                                                            ？
+                                                                            <rb>何<rt>ㄏㄜˊ</rt></rb>
+                                                                                <rb>故<rt>ㄍㆦ˪</rt></rb>
+                                                                                    <rb>至<rt>ㄗㄧ˪</rt></rb>
+                                                                                        <rb>於<rt>ㄧˊ</rt></rb>
+                                                                                            <rb>斯<rt>ㄙㄨ</rt></rb>
+                                                                                                ？
+                                                                                                
+            </ruby>
+            </p>
+        </div>
+
+    </body>
+
+</html>

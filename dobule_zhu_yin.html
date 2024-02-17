@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<!--
+CSS Vertical Bopomofo Test
+bpmftest_vertical.htm
+
+Kevin Hsieh
+27 January 2018
+
+Bobby Tung 
+27 September 2018
+-->
+<html lang="zh-TW">
+
+<head>
+    <title>
+        於漢字與右方顯示注音
+    </title>
+    <meta charset="UTF-8">
+    <style>
+        /*
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500&display=swap" rel="stylesheet">
+    
+    @font-face {
+        font-family: 'Noto Sans TC';
+        font-style: normal;
+        font-weight: 400;
+        src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff2) format('woff2'),
+        url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff) format('woff'),
+        url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.otf) format('opentype');
+    }
+    @font-face {
+        font-family: BopomofoRuby;
+        src: url(https://drive.google.com/file/d/1Ws-f93icYy885b4edBU8Sup_ZELjjKsJ/view?usp=sharing) format('ttf');
+    }
+    */
+
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700&display=swap');
+
+        @font-face {
+            font-family: BopomofoRuby;
+            src: local('BopomofoRuby1909-v1-Regular'),
+                url(BopomofoRuby1909-v1-Regular.ttf);
+        }
+
+        body {
+            /*
+            font-family: "Source Han Sans", BopomofoGPOS, serif;
+            */
+            font-family: 'Noto Serif TC', serif;
+            line-height: 1.6;
+        }
+
+        h2 {
+            font-family: 'Noto Sans TC', sans-serif;
+            font-family: sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .vert {
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            height: 30rem;
+        }
+
+        rt {
+            color: blue;
+            font-family: Arial;
+            font-size: 26%;
+            text-align: center;
+        }
+
+        rtc {
+            color: chocolate;
+            font-family: BopomofoRuby;
+            font-size: 26%;
+            letter-spacing: 0;
+            text-align: center;
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            display: inline-block;
+            vertical-align: middle;
+            padding-right: 0.3rem;
+            white-space: nowrap;
+        }
+
+        .ruby {
+            font-variant-east-asian: ruby;
+            -moz-font-feature-settings: "ruby";
+            -webkit-font-feature-settings: "ruby";
+            font-feature-settings: "ruby";
+        }
+
+
+        .fifteen_yin {
+            font-family: 'Noto Serif TC', serif;
+            ruby-position: inter-character;
+            font-size: 42px;
+            letter-spacing: 6px;
+            line-height: 1.8;
+        }
+
+        .fifteen_yin rt {
+            color: blue;
+            font-family: Arial;
+            font-size: 26%;
+            text-align: center;
+            padding-right: 0.8rem;
+        }
+
+        .poj {
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: 42px;
+            line-height: 1.8;
+        }
+
+        .zhu_yin {
+            font-family: 'Noto Serif TC', serif;
+            ruby-position: inter-character;
+            letter-spacing: 2px;
+            font-size: 42px;
+            line-height: 1.8;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2>漢字注音：漢字上方顯示「白話字」；漢字右方顯示「方音符號」</h2>
+
+    <h2>【白話字連字注音】</h2>
+    <div class="poj">
+        <p>
+            <ruby>閣一擺<rt>koh-chi̍t-pái</rt></ruby>
+            真心
+            <ruby>說多謝<rt>soeh-to-siā</rt></ruby>
+            ，這篇
+            <ruby>躼躼長<rt>lò-lò-tn̂g</rt></ruby>
+            ，
+            <ruby>又閣<rt>iū-koh</rt></ruby>
+            <ruby>詳細<rt>siông-sè</rt></ruby>
+            的解說
+            <ruby>予<rt>hō͘</rt></ruby>
+            我受益非淺。
+        </p>
+    </div>
+
+    <h2>【白話字逐字注音】</h2>
+    <div class="poj">
+        《
+        <ruby>楚<rt>chhó͘</rt></ruby>
+        <ruby>辭<rt>sû</rt></ruby>
+        ・
+        <ruby>漁<rt>gû</rt></ruby>
+        <ruby>父<rt>hū</rt></ruby>
+        》
+        </p>
+        <p>
+            <ruby>屈<rt>khut</rt></ruby>
+            <ruby>原<rt>goân</rt></ruby>
+            <ruby>既<rt>kì</rt></ruby>
+            <ruby>放<rt>hòng</rt></ruby>
+            ，
+            <ruby>遊<rt>iû</rt></ruby>
+            <ruby>於<rt>î</rt></ruby>
+            <ruby>江<rt>kang</rt></ruby>
+            <ruby>潭<rt>thâm</rt></ruby>
+            ，
+            <ruby>行<rt>hēng</rt></ruby>
+            <ruby>吟<rt>gîm</rt></ruby>
+            <ruby>澤<rt>te̍k</rt></ruby>
+            <ruby>畔<rt>poān</rt></ruby>
+            ，
+            <ruby>顏<rt>gân</rt></ruby>
+            <ruby>色<rt>se̍k</rt></ruby>
+            <ruby>憔<rt>chiâu</rt></ruby>
+            <ruby>悴<rt>chhī</rt></ruby>
+            ，
+            <ruby>形<rt>hêng</rt></ruby>
+            <ruby>容<rt>iông</rt></ruby>
+            <ruby>枯<rt>ko͘ </rt></ruby>
+            <ruby>槁<rt>kó</rt></ruby>
+            。
+        </p>
+        <p>
+            <ruby>漁<rt>gû</rt></ruby>
+            <ruby>父<rt>hū</rt></ruby>
+            <ruby>見<rt>kiàn</rt></ruby>
+            <ruby>而<rt>jî</rt></ruby>
+            <ruby>問<rt>mn̄g</rt></ruby>
+            <ruby>之<rt>chi</rt></ruby>
+            <ruby>曰<rt>oa̍t</rt></ruby>
+            <ruby>：<rt></rt></ruby>
+            「
+            <ruby>子<rt>chí</rt></ruby>
+            <ruby>非<rt>hui</rt></ruby>
+            <ruby>三<rt>saⁿ</rt></ruby>
+            <ruby>閭<rt>lî</rt></ruby>
+            <ruby>大<rt>tōa</rt></ruby>
+            <ruby>夫<rt>hu</rt></ruby>
+            <ruby>與<rt>ú</rt></ruby>
+            ？
+            <ruby>何<rt>hô</rt></ruby>
+            <ruby>故<rt>k ò͘</rt></ruby>
+            <ruby>至<rt>chì</rt></ruby>
+            <ruby>於<rt>î</rt></ruby>
+            <ruby>斯<rt>su</rt></ruby>
+            ？
+            」
+    </div>
+
+    <h2>【方音符號】</h2>
+    <div class="zhu_yin">
+        《
+        <ruby>楚<rtc>ㄘㆦˋ</rtc></ruby>
+        <ruby>辭<rtc>ㄙㄨˊ</rtc></ruby>
+        ・
+        <ruby>漁<rtc>ㆣㄨˊ</rtc></ruby>
+        <ruby>父<rtc>ㄏㄨ˫</rtc></ruby>
+        》
+        </p>
+        <p>
+            <ruby>屈<rtc>ㄎㄨㆵ</rtc></ruby>
+            <ruby>原<rtc>ㆣㄨㄢˊ</rtc></ruby>
+            <ruby>既<rtc>ㄍㄧ˪</rtc></ruby>
+            <ruby>放<rtc>ㄏㆲ˪</rtc></ruby>
+            ，
+            <ruby>遊<rtc>ㄧㄨˊ</rtc></ruby>
+            <ruby>於<rtc>ㄧˊ</rtc></ruby>
+            <ruby>江<rtc>ㄍㄤ</rtc></ruby>
+            <ruby>潭<rtc>ㄊㆰˊ</rtc></ruby>
+            ，
+            <ruby>行<rtc>ㄏㄧㄥ˫</rtc></ruby>
+            <ruby>吟<rtc>ㆣㄧㆬˊ</rtc></ruby>
+            <ruby>澤<rtc>ㄉㄧㆻ˙</rtc></ruby>
+            <ruby>畔<rtc>ㄅㄨㄢ˫</rtc></ruby>
+            ，
+            <ruby>顏<rtc>ㆣㄢˊ</rtc></ruby>
+            <ruby>色<rtc>ㄙㄧㆻ˙</rtc></ruby>
+            <ruby>憔<rtc>ㄗㄧㄠˊ</rtc></ruby>
+            <ruby>悴<rtc>ㄘㄧ˫</rtc></ruby>
+            ，
+            <ruby>形<rtc>ㄏㄧㄥˊ</rtc></ruby>
+            <ruby>容<rtc>ㄧㆲˊ</rtc></ruby>
+            <ruby>枯<rtc>ㄍㆦ</rtc></ruby>
+            <ruby>槁<rtc>ㄍㄜˋ</rtc></ruby>
+            。
+        </p>
+        <p>
+            <ruby>漁<rtc>ㆣㄨˊ</rtc></ruby>
+            <ruby>父<rtc>ㄏㄨ˫</rtc></ruby>
+            <ruby>見<rtc>ㄍㄧㄢ˪</rtc></ruby>
+            <ruby>而<rtc>ㆡㄧˊ</rtc></ruby>
+            <ruby>問<rtc>ㄇㆭ˫</rtc></ruby>
+            <ruby>之<rtc>ㄗㄧ</rtc></ruby>
+            <ruby>曰<rtc>ㄨㄚㆵ˙</rtc></ruby>
+            <ruby>：<rtc></rtc></ruby>
+            「
+            <ruby>子<rtc>ㄗㄧˋ</rtc></ruby>
+            <ruby>非<rtc>ㄏㄨㄧ</rtc></ruby>
+            <ruby>三<rtc>ㄙㆩ</rtc></ruby>
+            <ruby>閭<rtc>ㄌㄧˊ</rtc></ruby>
+            <ruby>大<rtc>ㄉㄨㄚ˫</rtc></ruby>
+            <ruby>夫<rtc>ㄏㄨ</rtc></ruby>
+            <ruby>與<rtc>ㄨˋ</rtc></ruby>
+            ？
+            <ruby>何<rtc>ㄏㄜˊ</rtc></ruby>
+            <ruby>故<rtc>ㄍㆦ˪</rtc></ruby>
+            <ruby>至<rtc>ㄗㄧ˪</rtc></ruby>
+            <ruby>於<rtc>ㄧˊ</rtc></ruby>
+            <ruby>斯<rtc>ㄙㄨ</rtc></ruby>
+            ？
+            」
+    </div>
+
+    <h2>【白話字＋方音符號】</h2>
+    <div class="zhu_yin">
+        <p>
+            《
+            <ruby>楚<rt>chhó͘</rt>
+                <rtc>ㄘㆦˋ</rtc>
+            </ruby>
+            <ruby>辭<rt>sû</rt>
+                <rtc>ㄙㄨˊ</rtc>
+            </ruby>
+            ・
+            <ruby>漁<rt>gû</rt>
+                <rtc>ㆣㄨˊ</rtc>
+            </ruby>
+            <ruby>父<rt>hū</rt>
+                <rtc>ㄏㄨ˫</rtc>
+            </ruby>
+            》
+        </p>
+        <p>
+            <ruby>屈<rt>khut</rt>
+                <rtc>ㄎㄨㆵ</rtc>
+            </ruby>
+            <ruby>原<rt>goân</rt>
+                <rtc>ㆣㄨㄢˊ</rtc>
+            </ruby>
+            <ruby>既<rt>kì</rt>
+                <rtc>ㄍㄧ˪</rtc>
+            </ruby>
+            <ruby>放<rt>hòng</rt>
+                <rtc>ㄏㆲ˪</rtc>
+            </ruby>
+            ，
+            <ruby>遊<rt>iû</rt>
+                <rtc>ㄧㄨˊ</rtc>
+            </ruby>
+            <ruby>於<rt>î</rt>
+                <rtc>ㄧˊ</rtc>
+            </ruby>
+            <ruby>江<rt>kang</rt>
+                <rtc>ㄍㄤ</rtc>
+            </ruby>
+            <ruby>潭<rt>thâm</rt>
+                <rtc>ㄊㆰˊ</rtc>
+            </ruby>
+            ，
+            <ruby>行<rt>hēng</rt>
+                <rtc>ㄏㄧㄥ˫</rtc>
+            </ruby>
+            <ruby>吟<rt>gîm</rt>
+                <rtc>ㆣㄧㆬˊ</rtc>
+            </ruby>
+            <ruby>澤<rt>te̍k</rt>
+                <rtc>ㄉㄧㆻ˙</rtc>
+            </ruby>
+            <ruby>畔<rt>poān</rt>
+                <rtc>ㄅㄨㄢ˫</rtc>
+            </ruby>
+            ，
+            <ruby>顏<rt>gân</rt>
+                <rtc>ㆣㄢˊ</rtc>
+            </ruby>
+            <ruby>色<rt>se̍k</rt>
+                <rtc>ㄙㄧㆻ˙</rtc>
+            </ruby>
+            <ruby>憔<rt>chiâu</rt>
+                <rtc>ㄗㄧㄠˊ</rtc>
+            </ruby>
+            <ruby>悴<rt>chhī</rt>
+                <rtc>ㄘㄧ˫</rtc>
+            </ruby>
+            ，
+            <ruby>形<rt>hêng</rt>
+                <rtc>ㄏㄧㄥˊ</rtc>
+            </ruby>
+            <ruby>容<rt>iông</rt>
+                <rtc>ㄧㆲˊ</rtc>
+            </ruby>
+            <ruby>枯<rt>ko͘ </rt>
+                <rtc>ㄍㆦ</rtc>
+            </ruby>
+            <ruby>槁<rt>kó</rt>
+                <rtc>ㄍㄜˋ</rtc>
+            </ruby>
+            。
+        </p>
+    </div>
+
+    <h2>【十五音橫排】</h2>
+    <div class="zhu_yin">
+        <p>
+            《
+            <ruby>楚<rt>出沽二</rt></ruby>
+            <ruby>辭<rt>時艍五</rt></ruby>
+            ・
+            <ruby>漁<rt>語艍五</rt></ruby>
+            <ruby>父<rt>喜艍七</rt></ruby>
+            》
+        </p>
+        <p>
+            <ruby>屈<rt>去君四</rt></ruby>
+            <ruby>原<rt>語觀五</rt></ruby>
+            <ruby>既<rt>求居三</rt></ruby>
+            <ruby>放<rt>喜公三</rt></ruby>
+            ，
+            <ruby>遊<rt>英丩五</rt></ruby>
+            <ruby>於<rt>英居五</rt></ruby>
+            <ruby>江<rt>求江一</rt></ruby>
+            <ruby>潭<rt>他甘五</rt></ruby>
+            ，
+            <ruby>行<rt>喜經七</rt></ruby>
+            <ruby>吟<rt>語金五</rt></ruby>
+            <ruby>澤<rt>地經八</rt></ruby>
+            <ruby>畔<rt>邊觀七</rt></ruby>
+            ，
+            <ruby>顏<rt>語干五</rt></ruby>
+            <ruby>色<rt>時經八</rt></ruby>
+            <ruby>憔<rt>曾嬌五</rt></ruby>
+            <ruby>悴<rt>出居七</rt></ruby>
+            ，
+            <ruby>形<rt>喜經五</rt></ruby>
+            <ruby>容<rt>英恭五</rt></ruby>
+            <ruby>枯<rt>求沽一</rt></ruby>
+            <ruby>槁<rt>求高二</rt></ruby>
+            。
+        </p>
+        <p>
+            <ruby>漁<rt>語艍五</rt></ruby>
+            <ruby>父<rt>喜艍七</rt></ruby>
+            <ruby>見<rt>求堅三</rt></ruby>
+            <ruby>而<rt>入居五</rt></ruby>
+            <ruby>問<rt>門鋼七</rt></ruby>
+            <ruby>之<rt>曾居一</rt></ruby>
+            <ruby>曰<rt>英觀八</rt></ruby>
+            <ruby>：<rt></rt></ruby>
+            「
+            <ruby>子<rt>曾居二</rt></ruby>
+            <ruby>非<rt>喜規一</rt></ruby>
+            <ruby>三<rt>時監一</rt></ruby>
+            <ruby>閭<rt>柳居五</rt></ruby>
+            <ruby>大<rt>地瓜七</rt></ruby>
+            <ruby>夫<rt>喜艍一</rt></ruby>
+            <ruby>與<rt>英艍二</rt></ruby>
+            ？
+            <ruby>何<rt>喜高五</rt></ruby>
+            <ruby>故<rt>求沽三</rt></ruby>
+            <ruby>至<rt>曾居三</rt></ruby>
+            <ruby>於<rt>英居五</rt></ruby>
+            <ruby>斯<rt>時艍一</rt></ruby>
+            ？
+            」
+        </p>
+    </div>
+
+    <h2>【十五音直排】</h2>
+    <div class="zhu_yin">
+        <p>
+            《
+            <ruby>楚<rtc>出沽二</rtc></ruby>
+            <ruby>辭<rtc>時艍五</rtc></ruby>
+            ・
+            <ruby>漁<rtc>語艍五</rtc></ruby>
+            <ruby>父<rtc>喜艍七</rtc></ruby>
+            》
+        </p>
+        <p>
+            <ruby>屈<rtc>去君四</rtc></ruby>
+            <ruby>原<rtc>語觀五</rtc></ruby>
+            <ruby>既<rtc>求居三</rtc></ruby>
+            <ruby>放<rtc>喜公三</rtc></ruby>
+            ，
+            <ruby>遊<rtc>英丩五</rtc></ruby>
+            <ruby>於<rtc>英居五</rtc></ruby>
+            <ruby>江<rtc>求江一</rtc></ruby>
+            <ruby>潭<rtc>他甘五</rtc></ruby>
+            ，
+            <ruby>行<rtc>喜經七</rtc></ruby>
+            <ruby>吟<rtc>語金五</rtc></ruby>
+            <ruby>澤<rtc>地經八</rtc></ruby>
+            <ruby>畔<rtc>邊觀七</rtc></ruby>
+            ，
+            <ruby>顏<rtc>語干五</rtc></ruby>
+            <ruby>色<rtc>時經八</rtc></ruby>
+            <ruby>憔<rtc>曾嬌五</rtc></ruby>
+            <ruby>悴<rtc>出居七</rtc></ruby>
+            ，
+            <ruby>形<rtc>喜經五</rtc></ruby>
+            <ruby>容<rtc>英恭五</rtc></ruby>
+            <ruby>枯<rtc>求沽一</rtc></ruby>
+            <ruby>槁<rtc>求高二</rtc></ruby>
+            。
+        </p>
+        <p>
+            <ruby>漁<rtc>語艍五</rtc></ruby>
+            <ruby>父<rtc>喜艍七</rtc></ruby>
+            <ruby>見<rtc>求堅三</rtc></ruby>
+            <ruby>而<rtc>入居五</rtc></ruby>
+            <ruby>問<rtc>門鋼七</rtc></ruby>
+            <ruby>之<rtc>曾居一</rtc></ruby>
+            <ruby>曰<rtc>英觀八</rtc></ruby>
+            <ruby>：<rtc></rtc></ruby>
+            「
+            <ruby>子<rtc>曾居二</rtc></ruby>
+            <ruby>非<rtc>喜規一</rtc></ruby>
+            <ruby>三<rtc>時監一</rtc></ruby>
+            <ruby>閭<rtc>柳居五</rtc></ruby>
+            <ruby>大<rtc>地瓜七</rtc></ruby>
+            <ruby>夫<rtc>喜艍一</rtc></ruby>
+            <ruby>與<rtc>英艍二</rtc></ruby>
+            ？
+            <ruby>何<rtc>喜高五</rtc></ruby>
+            <ruby>故<rtc>求沽三</rtc></ruby>
+            <ruby>至<rtc>曾居三</rtc></ruby>
+            <ruby>於<rtc>英居五</rtc></ruby>
+            <ruby>斯<rtc>時艍一</rtc></ruby>
+            ？
+            」
+        </p>
+    </div>
+
+    <p>
+        為能正確顯示「注音符號」，請點擊以下連結，下載及安裝注音符號專用字型：
+        <a href="https://github.com/cmex-30/Bopomofo_on_Web/blob/master/font/BopomofoRuby1909-v1-Regular.ttf">
+            BopomofoRuby1909-v1-Regular.ttf
+        </a>
+    </p>
+</body>
+
+</html>

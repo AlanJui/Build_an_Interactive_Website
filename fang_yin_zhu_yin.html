@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!--
+  CSS Vertical Bopomofo Test
+  bpmftest_vertical.htm
+
+  Kevin Hsieh
+  27 January 2018
+
+  Bobby Tung
+  27 September 2018
+-->
+<html lang="zh-TW">
+
+  <head>
+    <title>
+      CSS Bopomofo Test
+    </title>
+    <meta charset="UTF-8">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500&display=swap');
+
+      @font-face {
+        font-family: BopomofoRuby;
+        src: local('./assets/fonts/BopomofoRuby1909-v1-Regular'),
+        url(/assets/fonts/BopomofoRuby1909-v1-Regular.ttf);
+      }
+
+      body {
+        font-family: "標楷體", 'Noto Serif TC', "微軟正黑體", "Helvetica Neue", Helvetica, Arial, "微软雅黑", sans-serif;
+        line-height: 1.8;
+        letter-spacing: 2px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      h2 {
+        font-family: sans-serif;
+      }
+
+      .vert {
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        height: 30rem;
+      }
+
+      rt {
+        font-family: Arial;
+        font-size: 50%;
+        text-align: center;
+      }
+
+      rtc {
+        font-family: BopomofoRuby;
+        font-size: 40%;
+        letter-spacing: 0;
+        text-align: center;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        display: inline-block;
+        vertical-align: middle;
+        padding-right: 0.3rem;
+        white-space: nowrap;
+      }
+
+      .ruby {
+        font-variant-east-asian: ruby;
+        -moz-font-feature-settings: "ruby";
+        -webkit-font-feature-settings: "ruby";
+        font-feature-settings: "ruby";
+      }
+
+      .poj {
+        font-family: 'Noto Serif TC';
+        font-size: 48px;
+      }
+
+      .zhu_yin {
+        /*
+           font-family: BopomofoRuby, sans-serif;
+           font-family: 'NotoSansTC-Regular';
+         */
+        font-family: 'Noto Serif TC';
+        ruby-position: inter-character;
+        letter-spacing: 0px;
+        font-size: 48px;
+        line-height: 1.8;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <h2>Case 6, horizontal writing Bopomofo in inter-character ruby</h2>
+
+    <div class="poj">
+      <p>
+      <ruby>閣一擺<rt>koh-chi̍t-pái</rt></ruby>
+      真心
+      <ruby>說多謝<rt>soeh-to-siā</rt></ruby>
+      ，這篇
+      <ruby>躼躼長<rt>lò-lò-tn̂g</rt></ruby>
+      ，
+      <ruby>又閣<rt>iū-koh</rt></ruby>
+      <ruby>詳細<rt>siông-sè</rt></ruby>
+      的解說
+      <ruby>予<rt>hō͘</rt></ruby>
+      我受益非淺。
+      </p>
+    </div>
+
+    <div class="zhu_yin">
+      <p>
+      《
+      <ruby>楚<rtc>ㄘㆦˋ</rtc></ruby>
+      <ruby>辭<rtc>ㄙㄨˊ</rtc></ruby>
+      ・
+      <ruby>漁<rtc>ㆣㄨˊ</rtc></ruby>
+      <ruby>父<rtc>ㄏㄨ˫</rtc></ruby>
+      》
+      </p>
+      <p>
+      <ruby>屈<rtc>ㄎㄨㆵ</rtc></ruby>
+      <ruby>原<rtc>ㆣㄨㄢˊ</rtc></ruby>
+      <ruby>既<rtc>ㄍㄧ˪</rtc></ruby>
+      <ruby>放<rtc>ㄏㆲ˪</rtc></ruby>
+      ，
+      <ruby>遊<rtc>ㄧㄨˊ</rtc></ruby>
+      <ruby>於<rtc>ㄧˊ</rtc></ruby>
+      <ruby>江<rtc>ㄍㄤ</rtc></ruby>
+      <ruby>潭<rtc>ㄊㆰˊ</rtc></ruby>
+      ，
+      <ruby>行<rtc>ㄏㄧㄥ˫</rtc></ruby>
+      <ruby>吟<rtc>ㆣㄧㆬˊ</rtc></ruby>
+      <ruby>澤<rtc>ㄉㄧㆻ˙</rtc></ruby>
+      <ruby>畔<rtc>ㄅㄨㄢ˫</rtc></ruby>
+      ，
+      <ruby>顏<rtc>ㆣㄢˊ</rtc></ruby>
+      <ruby>色<rtc>ㄙㄧㆻ˙</rtc></ruby>
+      <ruby>憔<rtc>ㄗㄧㄠˊ</rtc></ruby>
+      <ruby>悴<rtc>ㄘㄧ˫</rtc></ruby>
+      ，
+      <ruby>形<rtc>ㄏㄧㄥˊ</rtc></ruby>
+      <ruby>容<rtc>ㄧㆲˊ</rtc></ruby>
+      <ruby>枯<rtc>ㄍㆦ</rtc></ruby>
+      <ruby>槁<rtc>ㄍㄜˋ</rtc></ruby>
+      。
+      </p>
+      <p>
+      <ruby>漁<rtc>ㆣㄨˊ</rtc></ruby>
+      <ruby>父<rtc>ㄏㄨ˫</rtc></ruby>
+      <ruby>見<rtc>ㄍㄧㄢ˪</rtc></ruby>
+      <ruby>而<rtc>ㆡㄧˊ</rtc></ruby>
+      <ruby>問<rtc>ㄇㆭ˫</rtc></ruby>
+      <ruby>之<rtc>ㄗㄧ</rtc></ruby>
+      <ruby>曰<rtc>ㄨㄚㆵ˙</rtc></ruby>
+      <ruby>：<rtc></rtc></ruby>
+      「
+      <ruby>子<rtc>ㄗㄧˋ</rtc></ruby>
+      <ruby>非<rtc>ㄏㄨㄧ</rtc></ruby>
+      <ruby>三<rtc>ㄙㆩ</rtc></ruby>
+      <ruby>閭<rtc>ㄌㄧˊ</rtc></ruby>
+      <ruby>大<rtc>ㄉㄨㄚ˫</rtc></ruby>
+      <ruby>夫<rtc>ㄏㄨ</rtc></ruby>
+      <ruby>與<rtc>ㄨˋ</rtc></ruby>
+      ？
+      <ruby>何<rtc>ㄏㄜˊ</rtc></ruby>
+      <ruby>故<rtc>ㄍㆦ˪</rtc></ruby>
+      <ruby>至<rtc>ㄗㄧ˪</rtc></ruby>
+      <ruby>於<rtc>ㄧˊ</rtc></ruby>
+      <ruby>斯<rtc>ㄙㄨ</rtc></ruby>
+      ？
+      」
+      </p>
+    </div>
+
+    <p>
+    為能正確顯示「注音符號」，請點擊以下連結，下載及安裝注音符號專用字型：
+    <a href="https://github.com/cmex-30/Bopomofo_on_Web/blob/master/font/BopomofoRuby1909-v1-Regular.ttf">
+      BopomofoRuby1909-v1-Regular.ttf
+    </a>
+    </p>
+  </body>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <title>CSS Bopomofo Test</title>
+    <meta charset="UTF-8" />
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
+
+        body, input, button, select, textarea {
+            font-family: "標楷體", "Noto Sans TC", "微軟正黑體", "Helvetica Neue",
+                Helvetica, Arial, "微软雅黑", sans-serif;
+            line-height: 1.8;
+            letter-spacing: 2px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        h2 {
+            font-family: sans-serif;
+        }
+
+        @font-face {
+            font-family: BopomofoRuby;
+            src: local("./assets/fonts/BopomofoRuby1909-v1-Regular"),
+                url(/assets/fonts/BopomofoRuby1909-v1-Regular.ttf);
+        }
+
+        /***************************
+          letter-spacing: 0px;
+        漢字横排，注音置於下方
+        rt:lang(zh-TW) {
+            font-family: BopomofoRuby;
+            font-size: 26%;
+            text-align: center;
+        }
+        ruby {
+            ruby-position: under;
+            ruby-align: space-around;
+            ruby-merge: separate;
+            writing-mode: horizontal-tb;
+        }
+         ****************************/
+        .zhu_yin {
+            font-size: 48px;
+            line-height: 64px;
+        }
+
+        rt {
+            font-family: BopomofoRuby;
+            font-size: 30%;
+            display: inline-block;
+            ruby-position: inter-character;
+            ruby-align: center;
+            ruby-merge: separate;
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            vertical-align: middle;
+        }
+
+        ruby {
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Ruby Tag 研習</h2>
+
+    <div class="zhu_yin">
+        <p>
+            《
+            <ruby>楚<rt>ㄘㆦˋ</rt></ruby>
+            <ruby>辭<rt>ㄙㄨˊ</rt></ruby>
+            ・
+            <ruby>漁<rt>ㆣㄨˊ</rt></ruby>
+            <ruby>父<rt>ㄏㄨ˫</rt></ruby>
+            》
+        </p>
+        <p>
+            <ruby>屈<rt>ㄎㄨㆵ</rt></ruby>
+            <ruby>原<rt>ㆣㄨㄢˊ</rt></ruby>
+            <ruby>既<rt>ㄍㄧ˪</rt></ruby>
+            <ruby>放<rt>ㄏㆲ˪</rt></ruby>
+            ，
+            <ruby>遊<rt>ㄧㄨˊ</rt></ruby>
+            <ruby>於<rt>ㄧˊ</rt></ruby>
+            <ruby>江<rt>ㄍㄤ</rt></ruby>
+            <ruby>潭<rt>ㄊㆰˊ</rt></ruby>
+            ，
+            <ruby>行<rt>ㄏㄧㄥ˫</rt></ruby>
+            <ruby>吟<rt>ㆣㄧㆬˊ</rt></ruby>
+            <ruby>澤<rt>ㄉㄧㆻ˙</rt></ruby>
+            <ruby>畔<rt>ㄅㄨㄢ˫</rt></ruby>
+            ，
+            <ruby>顏<rt>ㆣㄢˊ</rt></ruby>
+            <ruby>色<rt>ㄙㄧㆻ˙</rt></ruby>
+            <ruby>憔<rt>ㄗㄧㄠˊ</rt></ruby>
+            <ruby>悴<rt>ㄘㄧ˫</rt></ruby>
+            ，
+            <ruby>形<rt>ㄏㄧㄥˊ</rt></ruby>
+            <ruby>容<rt>ㄧㆲˊ</rt></ruby>
+            <ruby>枯<rt>ㄍㆦ</rt></ruby>
+            <ruby>槁<rt>ㄍㄜˋ</rt></ruby>
+            。
+        </p>
+        <p>
+            <ruby>漁<rt>ㆣㄨˊ</rt></ruby>
+            <ruby>父<rt>ㄏㄨ˫</rt></ruby>
+            <ruby>見<rt>ㄍㄧㄢ˪</rt></ruby>
+            <ruby>而<rt>ㆡㄧˊ</rt></ruby>
+            <ruby>問<rt>ㄇㆭ˫</rt></ruby>
+            <ruby>之<rt>ㄗㄧ</rt></ruby>
+            <ruby>曰<rt>ㄨㄚㆵ˙</rt></ruby>
+            <ruby>：<rt></rt></ruby>
+            「
+            <ruby>子<rt>ㄗㄧˋ</rt></ruby>
+            <ruby>非<rt>ㄏㄨㄧ</rt></ruby>
+            <ruby>三<rt>ㄙㆩ</rt></ruby>
+            <ruby>閭<rt>ㄌㄧˊ</rt></ruby>
+            <ruby>大<rt>ㄉㄨㄚ˫</rt></ruby>
+            <ruby>夫<rt>ㄏㄨ</rt></ruby>
+            <ruby>與<rt>ㄨˋ</rt></ruby>
+            ？
+            <ruby>何<rt>ㄏㄜˊ</rt></ruby>
+            <ruby>故<rt>ㄍㆦ˪</rt></ruby>
+            <ruby>至<rt>ㄗㄧ˪</rt></ruby>
+            <ruby>於<rt>ㄧˊ</rt></ruby>
+            <ruby>斯<rt>ㄙㄨ</rt></ruby>
+            ？ 」
+        </p>
+    </div>
+</body>
+
+</html>

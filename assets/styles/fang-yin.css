@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500&display=swap');
+
+@font-face {
+    font-family: BopomofoRuby;
+    src: local('./assets/fonts/BopomofoRuby1909-v1-Regular'),
+        url(/assets/fonts/BopomofoRuby1909-v1-Regular.ttf);
+}
+
+body {
+    font-family: "標楷體", 'Noto Serif TC', "微軟正黑體", "Helvetica Neue", Helvetica, Arial, "微软雅黑", sans-serif;
+    line-height: 200%;
+    letter-spacing: 2px;
+    margin: 10px 30px 10px 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#title {
+    color: darkblue;
+    font-size: larger;
+    font-family: "Noto Serif TC";
+    text-align: center;
+    page-break-after: always;
+}
+
+.vert {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    height: 30rem;
+}
+
+rt {
+    font-family: Arial;
+    font-size: 45%;
+    color: rosybrown;
+    text-align: center;
+    padding-right: 0.3rem;
+}
+
+rtc {
+    font-family: BopomofoRuby;
+    font-size: 40%;
+    color: green;
+    letter-spacing: 0;
+    text-align: center;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 0.3rem;
+    white-space: nowrap;
+}
+
+ruby { 
+    font-variant-east-asian: ruby;
+    -moz-font-feature-settings: "ruby";
+    -webkit-font-feature-settings: "ruby";
+    font-feature-settings: "ruby";
+}
+
+.poj {
+    font-family: 'Noto Serif TC';
+    font-size: 48px;
+    line-height: 2.4;
+}
+
+.pin_yin {
+    font-family: 'Noto Serif TC';
+    font-size: 48px;
+    line-height: 2.4;
+}
+
+.pin_yin rt {
+    font-family: Arial;
+    font-size: 45%;
+    color: rosybrown;
+    text-align: center;
+}
+
+.zhu_yin {
+    font-family: 'Noto Serif TC';
+    ruby-position: inter-character;
+    letter-spacing: 0px;
+    font-size: 48px;
+    line-height: 2.0;
+}
+
+.fifteen_yin {
+    font-family: 'Noto Serif TC';
+    font-size: 48px;
+    line-height: 2.0;
+}
+
+.fifteen_yin rt {
+    font-family: Arial;
+    font-size: 30%;
+    color: blue;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-top: 3cm;
+    margin-left: auto;
+    margin-right: auto;
+}
